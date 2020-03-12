@@ -1,0 +1,26 @@
+module samplecountertimer(clk, rst, samplecounter);
+
+	input clk, rst;
+	output reg samplecounter;
+	
+	reg [31:0] counter;
+	
+	always@(posedge clk or negedge rst)
+	begin
+		if (rst == 1'b0)
+		begin
+			counter <= 32'd0;
+			samplecounter <= 32'd0;
+		end
+		else
+		begin
+			counter <= (counter >= 32'd8192)? 32'd0 : counter + 32'd1;
+			if (counter >= 32'd8192)
+			begin
+				samplecounter <= (samplecounter >= 32'd64)? 32'd0 : samplecounter + 32'd1;
+			end
+			
+		end
+	end
+	
+endmodule

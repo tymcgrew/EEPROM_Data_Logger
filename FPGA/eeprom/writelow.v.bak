@@ -1,0 +1,9 @@
+module writelow(clk, rst, sdata, counter);
+
+	input clk, rst;
+	inout reg sdata;
+	input [31:0]counter;
+
+	assign sdata = (rst == 1'b1)? 1'bz : 1'b0;
+
+endmodule

@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sclk",
+					"strict" : false
+				},
+				{
+					"name" : "done",
+					"strict" : false
+				},
+				{
+					"name" : "adcclock",
+					"strict" : false
+				},
+				{
+					"name" : "dout",
+					"strict" : false
+				},
+				{
+					"name" : "cs",
+					"strict" : false
+				},
+				{
+					"name" : "sdata",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "din",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

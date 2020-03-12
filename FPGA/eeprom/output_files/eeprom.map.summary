@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Mar 12 10:28:56 2020
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : eeprom
+Top-level Entity Name : eeprom
+Family : Cyclone IV E
+Total logic elements : 1,907
+    Total combinational functions : 1,354
+    Dedicated logic registers : 1,296
+Total registers : 1296
+Total pins : 9
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

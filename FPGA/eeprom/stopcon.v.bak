@@ -1,0 +1,112 @@
+module stopcon(clk, rst, sdata, sclk_internal);
+
+input clk, rst;
+input sclk_internal;
+inout reg sdata;
+
+//------------------------------------------------------------------
+//                  -- State & Reg Declarations  --                   
+//------------------------------------------------------------------
+
+parameter RESET = 2'd0,
+          WAIT = 2'd1,
+          JUMP = 2'd2,
+          STOP = 2'd3;
+
+reg [1:0]STATE, NEXT_STATE;
+reg [31:0] counter;
+
+
+//------------------------------------------------------------------
+//                 -- Begin Declarations & Coding --                  
+//------------------------------------------------------------------
+
+always@(posedge clk or negedge rst)     // Determine STATE
+begin
+
+	if (rst == 1'b0)
+		STATE <= RESET;
+	else
+		STATE <= NEXT_STATE;
+
+end
+
+
+always@(*)                              // Determine NEXT_STATE
+begin
+	case(STATE)
+
+	RESET:
+	begin
+		if (rst == 1'b1)
+			NEXT_STATE = WAIT;
+		else
+			NEXT_STATE = RESET;
+	end
+
+	WAIT:
+	begin
+		NEXT_STATE = (counter < 32'd16)? WAIT : JUMP;
+	end
+
+	DROP:
+	begin
+		NEXT_STATE = (counter > 32'd34)? STOP : JUMP;
+	end
+	
+	STOP:
+	begin
+		NEXT_STATE = STOP;
+	end
+
+	default:
+	begin
+		NEXT_STATE = STOP;
+	end
+
+	endcase
+end
+
+
+always@(posedge clk or negedge rst)     // Determine outputs
+begin
+
+	if (rst == 1'b0)
+	begin
+		sdata <= 1'bz;
+		counter <= 32'd0;
+	end
+
+	else
+	begin
+		case(STATE)
+
+		RESET:
+		begin
+			sdata <= 1'bz;
+			counter <= 32'd0;
+		end
+
+		WAIT:
+		begin
+			counter <= counter + 32'd1;
+			sdata <= 1'b1;
+		end
+
+		DROP:
+		begin
+			counter <= counter + 32'd1;
+			sdata <= 1'b0;
+		end
+		
+		STOP:
+		begin
+			sdata <= 1'bz;
+			counter <= 32'd0;
+		end
+
+		endcase
+	end
+
+end
+endmodule

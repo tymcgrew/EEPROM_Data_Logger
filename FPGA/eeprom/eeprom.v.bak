@@ -1,0 +1,9 @@
+module eeprom(clk, sdata, sclk);
+
+input clk;
+output reg sclk;
+inout reg sdata;
+
+
+
+endmodule

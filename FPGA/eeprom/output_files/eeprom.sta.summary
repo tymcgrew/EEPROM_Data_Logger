@@ -1,0 +1,161 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -6.281
+TNS   : -6005.051
+
+Type  : Slow 1200mV 85C Model Setup 'adcreader:adcreader1|downclock:downclock1|adcclock'
+Slack : -4.505
+TNS   : -201.144
+
+Type  : Slow 1200mV 85C Model Setup 'rst'
+Slack : -1.725
+TNS   : -3.317
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'adcreader:adcreader1|downclock:downclock1|adcclock'
+Slack : 0.406
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'rst'
+Slack : 1.220
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'clk'
+Slack : -2.448
+TNS   : -2268.557
+
+Type  : Slow 1200mV 85C Model Recovery 'adcreader:adcreader1|downclock:downclock1|adcclock'
+Slack : -1.506
+TNS   : -71.029
+
+Type  : Slow 1200mV 85C Model Removal 'adcreader:adcreader1|downclock:downclock1|adcclock'
+Slack : 1.073
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'clk'
+Slack : 1.623
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -1604.110
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'rst'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'adcreader:adcreader1|downclock:downclock1|adcclock'
+Slack : -1.285
+TNS   : -64.250
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -5.733
+TNS   : -5418.240
+
+Type  : Slow 1200mV 0C Model Setup 'adcreader:adcreader1|downclock:downclock1|adcclock'
+Slack : -4.017
+TNS   : -179.146
+
+Type  : Slow 1200mV 0C Model Setup 'rst'
+Slack : -1.381
+TNS   : -2.650
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.355
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'adcreader:adcreader1|downclock:downclock1|adcclock'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'rst'
+Slack : 1.019
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'clk'
+Slack : -2.153
+TNS   : -1977.892
+
+Type  : Slow 1200mV 0C Model Recovery 'adcreader:adcreader1|downclock:downclock1|adcclock'
+Slack : -1.286
+TNS   : -60.365
+
+Type  : Slow 1200mV 0C Model Removal 'adcreader:adcreader1|downclock:downclock1|adcclock'
+Slack : 1.135
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'clk'
+Slack : 1.618
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -1604.110
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'rst'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'adcreader:adcreader1|downclock:downclock1|adcclock'
+Slack : -1.285
+TNS   : -64.250
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -2.659
+TNS   : -2355.820
+
+Type  : Fast 1200mV 0C Model Setup 'adcreader:adcreader1|downclock:downclock1|adcclock'
+Slack : -1.655
+TNS   : -70.235
+
+Type  : Fast 1200mV 0C Model Setup 'rst'
+Slack : -0.493
+TNS   : -0.910
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'adcreader:adcreader1|downclock:downclock1|adcclock'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'rst'
+Slack : 0.713
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'clk'
+Slack : -1.483
+TNS   : -1403.917
+
+Type  : Fast 1200mV 0C Model Recovery 'adcreader:adcreader1|downclock:downclock1|adcclock'
+Slack : -1.077
+TNS   : -51.255
+
+Type  : Fast 1200mV 0C Model Removal 'adcreader:adcreader1|downclock:downclock1|adcclock'
+Slack : 0.432
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'clk'
+Slack : 0.606
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -1324.900
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'rst'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'adcreader:adcreader1|downclock:downclock1|adcclock'
+Slack : -1.000
+TNS   : -50.000
+
+------------------------------------------------------------
